@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Gradient Background</title>
+  <style>
+    /* Make sure the page fills the entire viewport */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Full-screen animated gradient background */
+    body {
+      background: linear-gradient(270deg, #ff6b6b, #f7c948, #6b9cff, #8a6bff);
+      background-size: 800% 800%;
+      animation: gradientAnimation 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Centered content box */
+    .content {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3); /* semi-transparent overlay */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      margin: 0 0 15px;
+      font-size: 3rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Animated Gradient Background</h1>
+    <p>Pure CSS — no images needed. Enjoy the smooth gradient animation!</p>
+  </div>
+</body>
+</html>
