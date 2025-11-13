@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Decoration & Transform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      text-transform: uppercase; /* uppercase letters */
+      text-decoration: underline overline; /* underline + overline */
+      color: #2c3e50;
+    }
+
+    p {
+      text-transform: capitalize; /* first letter of each word capitalized */
+      text-decoration: line-through; /* line through text */
+      color: #555;
+      margin-top: 20px;
+    }
+
+    a {
+      text-transform: lowercase; /* all lowercase */
+      text-decoration: none; /* remove underline */
+      color: #3498db;
+    }
+
+    a:hover {
+      text-decoration: underline; /* add underline on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Decoration & Transform</h1>
+  <p>this paragraph has capitalized words and line-through.</p>
+  <a href="#">this is a link</a>
+</body>
+</html>

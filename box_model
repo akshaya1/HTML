@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    .box {
+      width: 200px;                 /* content width */
+      padding: 20px;                /* space inside the box */
+      border: 5px solid #3498db;    /* border around the box */
+      margin: 30px;                 /* space outside the box */
+      background-color: #ecf0f1;    /* background inside padding */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Box Model Example
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precise Positioning Example</title>
+  <style>
+    .container {
+      position: relative;  /* parent for absolute positioning */
+      width: 400px;
+      height: 300px;
+      margin: 50px auto;
+      background-color: #f0f0f0;
+      border: 2px solid #ccc;
+    }
+
+    .box1 {
+      position: absolute; /* positioned relative to container */
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box2 {
+      position: absolute; /* precise bottom-right */
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
+      height: 80px;
+      background-color: #2ecc71;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">Top Left</div>
+    <div class="box2">Bottom Right</div>
+  </div>
+</body>
+</html>

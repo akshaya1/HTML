@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Example</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      gap: 20px;
+    }
+
+    input {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      outline: none; /* remove default browser outline */
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    /* Focus effect */
+    input:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Focus effect for button */
+    button:focus {
+      background-color: #3498db;
+      color: white;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" placeholder="Focus on me">
+  <button>Focus Button</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Example</title>
+  <style>
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #f0f0f0;
+      padding: 20px;
+      overflow: auto; /* Clear floats */
+    }
+
+    .left-box {
+      float: left;
+      width: 45%;
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      margin-right: 5%;
+      text-align: center;
+    }
+
+    .right-box {
+      float: left;
+      width: 45%;
+      background-color: #2ecc71;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-box">Left Box (float left)</div>
+    <div class="right-box">Right Box (float left)</div>
+  </div>
+</body>
+</html>

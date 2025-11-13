@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text & Box Shadow Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    h1 {
+      text-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* shadow behind text */
+      color: #2c3e50;
+    }
+
+    p {
+      text-indent: 50px; /* indent first line */
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 500px;
+      text-align: justify;
+    }
+
+    .box {
+      margin-top: 30px;
+      width: 200px;
+      height: 100px;
+      background: #3498db;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.4); /* shadow around box */
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Shadow Example</h1>
+  <p>This paragraph has a <strong>text indent</strong> applied to its first line, creating a neat spacing effect.</p>
+  <div class="box">Box Shadow</div>
+</body>
+</html>

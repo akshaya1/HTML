@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opacity Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      gap: 20px;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #3498db;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      transition: opacity 0.5s;
+    }
+
+    /* Normal opacity */
+    .box1 { opacity: 1; }
+
+    /* Semi-transparent */
+    .box2 { opacity: 0.6; }
+
+    /* Hover effect with opacity */
+    .box:hover { opacity: 0.3; }
+  </style>
+</head>
+<body>
+  <div class="box box1">Full</div>
+  <div class="box box2">60%</div>
+</body>
+</html>
